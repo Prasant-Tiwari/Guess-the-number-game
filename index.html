@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexWelcome.css">
+
+    <script src="./index.js"  defer></script>
+    <title>Guess the Number</title>
+</head>
+<body onload="inIt()">
+    <div class="main-container" id="main_container">
+        <div class="container">
+                <h2 class="main-heading">Guess the random number between 1-100</h2>
+                <div class="img-container"></div>
+                <p>Select the Difficulty</p>
+                <div class="btn-container">
+                    <button class="btn btn-1" id="button-1"> Easy: 10 Attempts</button>
+                    <button class="btn btn-2" id="button-2">Hard: 5 Attempts</button>
+                </div>
+        </div>
+        
+    </div>
+
+    <div class="game-container" >
+        <div class="gamecontainer">
+            <div class="game_wrapper">
+                <button  id="restart">New Game</button>
+                <h2 class="game-main-heading" id="game-main-heading" >Your Guess</h2>
+                <input id="input" type="number" value="" placeholder="Enter Your Guess" >
+                <div class="textspace-1">
+                    <p>Number of Previous Attempts</p>
+                    <span id="span-1">0</span>
+                </div>
+                <div class="textspace-2">
+                    <p>Your Previous Guesses</p>
+                    <span id="span-2">-</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
